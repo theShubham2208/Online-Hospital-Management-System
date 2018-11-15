@@ -1,0 +1,75 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Patient Registration</title>
+<style>
+body{
+	background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+	}
+.mudya-hoya-input{
+	border-radius: 8px;
+    padding: 1.7%; 
+    width: 360px;
+    border-style:none;
+    height: 10px; 
+    outline:none;
+    box-shadow:2px 2px gray;
+    padding-left:2%;
+    padding-right:2%;
+    }
+    
+    .mudya-hoya-input-btn{
+    border-radius: 25px;
+    padding: 1.4%; 
+    border-style:none;
+    height: 40px; 
+    outline:none;
+    box-shadow:2px 2px gray;
+    width:40%;
+    cursor:pointer;
+    }
+</style>
+</head>
+<body background="adddoc.jpg">
+<a href = "http://localhost:8184/Project/Home.jsp">HOME</a></br>
+<a href = "http://localhost:8184/Project/DoctorOperations.jsp">Go Back</a>
+<center>
+<h1>Register Patient Here</h1>
+<form action="AddPatient.jsp" method="post">
+<div style="margin-top:7%; margin-left:5%; margin-right:5%; font-family: 'Ubuntu', sans-serif; color:white;">
+<hr>
+			<table>
+			<tr>
+<td>Patient Id :</td><td><input class="mudya-hoya-input" type="text" name="PetId" /></td>
+</tr>
+<tr>
+<td>Password :</td><td><input class="mudya-hoya-input" type="password" name="Password" /></td>
+</tr>
+<td>First Name :</td><td><input  class="mudya-hoya-input" type="text" name="FirstName" /></td>
+<tr>
+<td>Last Name :</td><td><input class="mudya-hoya-input" type="text" name="LastName" /></td>
+</tr>
+<td>Suffering From :</td><td><input class="mudya-hoya-input" vtype="text" name="Problem" /></td>
+<tr>
+<td>Address :</td><td><input class="mudya-hoya-input" type="text" name="Address" /></td>
+</tr>
+
+<tr>
+<td>Date of Registration :</td><td><input class="mudya-hoya-input" type="text" name="DOR" /></td>
+</tr>
+</table>
+<br>
+			<input id="submit" type="submit" class="mudya-hoya-input-btn" style="margin-left:30%; margin-right:30%; height:40px; color:white; font-size:medium; background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);" value="Submit">
+		</div>
+		</form>	
+
+
+
+</center>
+</body>
+</html>
